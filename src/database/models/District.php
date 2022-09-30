@@ -34,7 +34,7 @@ class District extends Model
      * @var array
      */
     protected $hidden = [
-        'regency_id'
+        'city_id'
     ];
 
     /**
@@ -44,7 +44,7 @@ class District extends Model
      */
     public function regency()
     {
-        return $this->belongsTo(Regency::class);
+        return $this->belongsTo(City::class);
     }
 
     /**

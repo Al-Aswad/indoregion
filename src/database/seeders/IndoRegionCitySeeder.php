@@ -13,7 +13,7 @@ use Illuminate\Database\Seeder;
 use AzisHapidin\IndoRegion\RawDataGetter;
 use Illuminate\Support\Facades\DB;
 
-class IndoRegionRegencySeeder extends Seeder
+class IndoRegionCitySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -28,6 +28,6 @@ class IndoRegionRegencySeeder extends Seeder
         $regencies = RawDataGetter::getRegencies();
 
         // Insert Data to Database
-        DB::table('regencies')->insert($regencies);
+        DB::table('cities')->insert($regencies);
     }
 }

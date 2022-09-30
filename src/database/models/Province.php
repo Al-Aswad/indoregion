@@ -32,6 +32,6 @@ class Province extends Model
      */
     public function regencies()
     {
-        return $this->hasMany(Regency::class);
+        return $this->hasMany(City::class);
     }
 }

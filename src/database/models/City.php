@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Regency Model.
  */
-class Regency extends Model
+class City extends Model
 {
     use RegencyTrait;
 
@@ -24,7 +24,7 @@ class Regency extends Model
      *
      * @var string
      */
-    protected $table = 'regencies';
+    protected $table = 'cities';
 
     /**
      * The attributes that should be hidden for arrays.
